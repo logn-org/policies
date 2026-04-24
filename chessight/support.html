@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Support - Chessight</title>
+    <style>
+      :root {
+        /* Chess.com inspired color palette */
+        --bg-body: #312e2b;
+        --bg-card: #262421;
+        --bg-surface: #2f2c29;
+        --text-main: #ffffff;
+        --text-secondary: #bababa;
+        --accent-green: #7fa650;
+        --accent-green-hover: #95bb6a;
+        --border-color: #403d39;
+      }
+
+      body {
+        background-color: var(--bg-body);
+        color: var(--text-main);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        background-color: var(--bg-card);
+        max-width: 800px;
+        width: 100%;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        border: 1px solid var(--border-color);
+      }
+
+      h1 {
+        font-size: 2.2rem;
+        margin-top: 0;
+        margin-bottom: 5px;
+        color: var(--text-main);
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 15px;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+        color: var(--text-main);
+        margin-top: 35px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+      }
+
+      h2::before {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 20px;
+        background-color: var(--accent-green);
+        margin-right: 12px;
+        border-radius: 2px;
+      }
+
+      h3 {
+        font-size: 1.05rem;
+        color: var(--text-main);
+        margin-top: 22px;
+        margin-bottom: 8px;
+      }
+
+      p {
+        color: var(--text-secondary);
+        margin-bottom: 15px;
+      }
+
+      ul,
+      ol {
+        color: var(--text-secondary);
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 12px;
+      }
+
+      li strong,
+      p strong,
+      .contact-row strong,
+      summary strong {
+        color: var(--text-main);
+        font-weight: 600;
+      }
+
+      a {
+        color: var(--accent-green);
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.2s ease;
+      }
+
+      a:hover {
+        color: var(--accent-green-hover);
+        text-decoration: underline;
+      }
+
+      header p {
+        margin-top: 0;
+        color: var(--text-secondary);
+      }
+
+      section + section {
+        margin-top: 6px;
+      }
+
+      .quick-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 14px;
+      }
+
+      .quick-link {
+        display: block;
+        background-color: var(--bg-surface);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        padding: 16px 18px;
+      }
+
+      .quick-link strong {
+        display: block;
+        color: var(--text-main);
+        margin-bottom: 4px;
+      }
+
+      .quick-link small {
+        color: var(--text-secondary);
+      }
+
+      details {
+        background-color: var(--bg-surface);
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+        padding: 14px 16px;
+        margin-bottom: 12px;
+      }
+
+      summary {
+        cursor: pointer;
+        color: var(--text-main);
+        font-weight: 600;
+      }
+
+      details p,
+      details ul {
+        margin-top: 12px;
+        margin-bottom: 0;
+      }
+
+      .contact-row {
+        color: var(--text-secondary);
+        margin-bottom: 10px;
+      }
+
+      .footer {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border-color);
+      }
+
+      .footer p {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Chessight Support</h1>
+        <p>Chess analysis &amp; game review - powered by Stockfish 18</p>
+      </header>
+
+      <section>
+        <h2>Get Help Fast</h2>
+        <div class="quick-links">
+          <a class="quick-link" href="mailto:help@chessight.app">
+            <strong>Email Us</strong>
+            <small>help@chessight.app</small>
+          </a>
+          <a class="quick-link" href="https://tally.so/r/vGO5NQ">
+            <strong>Report a Bug</strong>
+            <small>Tell us what broke</small>
+          </a>
+          <a class="quick-link" href="https://tally.so/r/44olMo">
+            <strong>Request a Feature</strong>
+            <small>What should we build?</small>
+          </a>
+          <a class="quick-link" href="privacy-policy.html">
+            <strong>Privacy Policy</strong>
+            <small>How we handle data</small>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2>Frequently Asked Questions</h2>
+
+        <details>
+          <summary>How does Chessight analyze my games?</summary>
+          <p>
+            Chessight runs a full Stockfish 18 engine directly on your device.
+            When you open a game, every position is evaluated, each move is
+            classified, and accuracy percentages are calculated for both
+            players. Nothing is sent to a server for analysis.
+          </p>
+        </details>
+
+        <details>
+          <summary>Where do I find my chess.com games?</summary>
+          <p>
+            Open the <strong>Profiles</strong> tab and add your chess.com
+            username. Your recent games will appear automatically. Tap any game
+            to analyze it. Chess.com's public API is used, so you do not need to
+            give us a password or log in.
+          </p>
+        </details>
+
+        <details>
+          <summary>What's the difference between free and Premium?</summary>
+          <p>
+            <strong>Free:</strong> One full game analysis per day, resetting at
+            midnight in your local time. You can also watch a rewarded ad to
+            unlock additional analyses.
+          </p>
+          <p>
+            <strong>Premium:</strong> A one-time purchase that removes the daily
+            limit and hides all ads. Premium is <em>Family Shareable</em>.
+          </p>
+        </details>
+
+        <details>
+          <summary>How do I restore a purchase?</summary>
+          <p>
+            Go to <strong>Settings -&gt; Restore Purchases</strong>. If your
+            Apple ID owns Chessight Premium, or a family member in your Family
+            Sharing group does, it will be reactivated at no additional charge.
+          </p>
+        </details>
+
+        <details>
+          <summary>Can I get a refund?</summary>
+          <p>
+            Refunds for in-app purchases are handled by Apple, not by us. Visit
+            <a href="https://reportaproblem.apple.com"
+              >reportaproblem.apple.com</a
+            >, sign in with your Apple ID, and request a refund for the
+            Chessight purchase.
+          </p>
+        </details>
+
+        <details>
+          <summary>Why do you show ads?</summary>
+          <p>
+            Rewarded ads give free users a way to unlock more analyses. You can
+            remove all ads permanently with a one-time Premium purchase.
+          </p>
+        </details>
+
+        <details>
+          <summary>Do you track me?</summary>
+          <p>
+            Only if you grant permission through iOS App Tracking Transparency.
+            If you decline, you can still use the app and see non-personalized
+            ads. Full details are in our
+            <a href="privacy-policy.html">Privacy Policy</a>.
+          </p>
+        </details>
+
+        <details>
+          <summary>Why won't my game analyze?</summary>
+          <p>A few common reasons:</p>
+          <ul>
+            <li>Invalid PGN or incomplete game text</li>
+            <li>Daily quota already used for free analysis</li>
+            <li>Unusual starting positions or imported variations</li>
+          </ul>
+          <p>
+            If the problem persists, please
+            <a href="https://tally.so/r/vGO5NQ">report it</a> and include the
+            PGN if possible.
+          </p>
+        </details>
+
+        <details>
+          <summary>Why is the eval bar flashing or stuck?</summary>
+          <p>
+            When you play a variation move, the eval bar briefly dims while
+            Stockfish recalculates the new position. If it remains dimmed for
+            more than a few seconds, force-quit and relaunch the app.
+          </p>
+        </details>
+
+        <details>
+          <summary>Does Chessight work offline?</summary>
+          <p>
+            Yes. Game analysis, the bot game, the board editor, learning tools,
+            and saved games work offline. Chess.com imports and rewarded ads
+            require an internet connection.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is my data private?</summary>
+          <p>
+            Your games and analysis are stored locally on your device. We use
+            limited analytics, diagnostics, advertising, and purchase
+            entitlement data as described in the
+            <a href="privacy-policy.html">Privacy Policy</a>.
+          </p>
+        </details>
+      </section>
+
+      <section>
+        <h2>Troubleshooting</h2>
+
+        <h3>The app crashes on launch</h3>
+        <p>
+          Force-quit Chessight and relaunch it. If it still crashes, restart
+          your iPhone. If the issue persists, please
+          <a href="https://tally.so/r/vGO5NQ">send us a bug report</a>.
+        </p>
+
+        <h3>A purchase failed or didn't unlock</h3>
+        <ol>
+          <li>Check your internet connection.</li>
+          <li>Go to <strong>Settings -&gt; Restore Purchases</strong>.</li>
+          <li>
+            Confirm the purchase appears in your Apple ID history at
+            <a href="https://reportaproblem.apple.com"
+              >reportaproblem.apple.com</a
+            >.
+          </li>
+          <li>
+            If it still does not restore, email us at
+            <a href="mailto:help@chessight.app">help@chessight.app</a>.
+          </li>
+        </ol>
+
+        <h3>Rewarded ads won't load</h3>
+        <p>
+          Ads require an internet connection and are not always available. If no
+          ad appears after tapping <strong>Watch Ad</strong>, try again later.
+          If the problem continues for a full day, contact us.
+        </p>
+
+        <h3>My chess.com games don't appear</h3>
+        <p>
+          Check that you entered the exact username used on chess.com. Usernames
+          are case-insensitive. Newly finished games can also take a few minutes
+          to appear through Chess.com's API.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <div class="contact-row">
+          <strong>Email:</strong>
+          <a href="mailto:help@chessight.app">help@chessight.app</a>
+        </div>
+        <div class="contact-row">
+          <strong>Bug reports:</strong>
+          <a href="https://tally.so/r/vGO5NQ">Submit a bug</a>
+        </div>
+        <div class="contact-row">
+          <strong>Feature requests:</strong>
+          <a href="https://tally.so/r/44olMo">Suggest a feature</a>
+        </div>
+        <div class="contact-row">
+          <strong>Developer:</strong> LogNComplexity
+        </div>
+      </section>
+
+      <section>
+        <h2>About Chessight</h2>
+        <p>
+          Chessight is an indie project built to bring strong chess analysis to
+          iPhone without requiring a chess.com subscription. It runs Stockfish
+          18 with NNUE evaluation directly on your device, so your analysis can
+          work offline and stay private.
+        </p>
+        <p>
+          Chessight is open source. Because it bundles Stockfish, it is
+          distributed under the GPL v3 license.
+        </p>
+      </section>
+
+      <div class="footer">
+        <p>
+          © 2026 LogNComplexity ·
+          <a href="privacy-policy.html">Privacy Policy</a> ·
+          <a href="mailto:help@chessight.app">Contact</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
