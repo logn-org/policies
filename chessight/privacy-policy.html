@@ -1,161 +1,334 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy - Chessight</title>
     <style>
-        :root {
-            /* Chess.com inspired color palette */
-            --bg-body: #312e2b;
-            --bg-card: #262421;
-            --text-main: #ffffff;
-            --text-secondary: #bababa;
-            --accent-green: #7fa650;
-            --accent-green-hover: #95bb6a;
-            --border-color: #403d39;
-        }
+      :root {
+        /* Chess.com inspired color palette */
+        --bg-body: #312e2b;
+        --bg-card: #262421;
+        --text-main: #ffffff;
+        --text-secondary: #bababa;
+        --accent-green: #7fa650;
+        --accent-green-hover: #95bb6a;
+        --border-color: #403d39;
+      }
 
-        body {
-            background-color: var(--bg-body);
-            color: var(--text-main);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 40px 20px;
-            display: flex;
-            justify-content: center;
-        }
+      body {
+        background-color: var(--bg-body);
+        color: var(--text-main);
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center;
+      }
 
-        .container {
-            background-color: var(--bg-card);
-            max-width: 800px;
-            width: 100%;
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-            border: 1px solid var(--border-color);
-        }
+      .container {
+        background-color: var(--bg-card);
+        max-width: 800px;
+        width: 100%;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        border: 1px solid var(--border-color);
+      }
 
-        h1 {
-            font-size: 2.2rem;
-            margin-top: 0;
-            margin-bottom: 5px;
-            color: var(--text-main);
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 15px;
-        }
+      h1 {
+        font-size: 2.2rem;
+        margin-top: 0;
+        margin-bottom: 5px;
+        color: var(--text-main);
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 15px;
+      }
 
-        h2 {
-            font-size: 1.3rem;
-            color: var(--text-main);
-            margin-top: 35px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-        }
+      h2 {
+        font-size: 1.3rem;
+        color: var(--text-main);
+        margin-top: 35px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+      }
 
-        /* Adds a subtle green marker next to subheadings */
-        h2::before {
-            content: '';
-            display: inline-block;
-            width: 5px;
-            height: 20px;
-            background-color: var(--accent-green);
-            margin-right: 12px;
-            border-radius: 2px;
-        }
+      /* Adds a subtle green marker next to subheadings */
+      h2::before {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 20px;
+        background-color: var(--accent-green);
+        margin-right: 12px;
+        border-radius: 2px;
+      }
 
-        p {
-            color: var(--text-secondary);
-            margin-bottom: 15px;
-        }
+      p {
+        color: var(--text-secondary);
+        margin-bottom: 15px;
+      }
 
-        .last-updated {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-            margin-bottom: 30px;
-            opacity: 0.8;
-        }
+      .last-updated {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        margin-bottom: 30px;
+        opacity: 0.8;
+      }
 
-        .highlight-box {
-            font-size: 1.1rem;
-            font-weight: 500;
-            color: var(--text-main);
-            background-color: rgba(127, 166, 80, 0.1);
-            padding: 15px 20px;
-            border-left: 4px solid var(--accent-green);
-            border-radius: 4px;
-            margin-bottom: 30px;
-        }
+      .highlight-box {
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: var(--text-main);
+        background-color: rgba(127, 166, 80, 0.1);
+        padding: 15px 20px;
+        border-left: 4px solid var(--accent-green);
+        border-radius: 4px;
+        margin-bottom: 30px;
+      }
 
-        ul {
-            color: var(--text-secondary);
-            padding-left: 20px;
-        }
+      ul {
+        color: var(--text-secondary);
+        padding-left: 20px;
+      }
 
-        li {
-            margin-bottom: 12px;
-        }
+      li {
+        margin-bottom: 12px;
+      }
 
-        li strong {
-            color: var(--text-main);
-            font-weight: 600;
-        }
+      li strong {
+        color: var(--text-main);
+        font-weight: 600;
+      }
 
-        a {
-            color: var(--accent-green);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.2s ease;
-        }
+      a {
+        color: var(--accent-green);
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.2s ease;
+      }
 
-        a:hover {
-            color: var(--accent-green-hover);
-            text-decoration: underline;
-        }
+      a:hover {
+        color: var(--accent-green-hover);
+        text-decoration: underline;
+      }
 
-        .contact-box {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border-color);
-        }
+      .contact-box {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border-color);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h1>Privacy Policy for Chessight</h1>
-        <div class="last-updated">Last updated: April 13, 2026</div>
+      <h1>Privacy Policy for Chessight</h1>
+      <div class="last-updated">Last updated: April 24, 2026</div>
 
-        <div class="highlight-box">
-            Chessight does not collect, store, or share any personal data.
-        </div>
+      <div class="highlight-box">
+        Chessight uses limited data for app functionality, premium purchase
+        entitlements, analytics, diagnostics, and advertising as described
+        below.
+      </div>
 
-        <h2>Data Collection</h2>
-        <ul>
-            <li>The app does not require user accounts or login.</li>
-            <li>Chess.com usernames entered by the user are used solely to fetch publicly available game data from the Chess.com public API.</li>
-            <li>No personal information is transmitted to our servers.</li>
-        </ul>
+      <h2>Data Collection</h2>
+      <ul>
+        <li>The app does not require user accounts or login.</li>
+        <li>
+          Chess.com usernames entered by the user are used solely to fetch
+          publicly available game data from the Chess.com public API.
+        </li>
+        <li>
+          We do not receive your payment card or billing details. Apple
+          processes purchases through StoreKit.
+        </li>
+        <li>
+          We and our service providers may process limited data needed to
+          provide the app, measure usage, diagnose crashes, support rewarded
+          ads, and verify premium entitlements.
+        </li>
+      </ul>
 
-        <h2>Third-Party Services</h2>
-        <ul>
-            <li><strong>Firebase Crashlytics:</strong> Collects anonymous crash reports and performance data to help us improve app stability. No personally identifiable information is included in crash reports.</li>
-            <li><strong>Firebase Analytics:</strong> Collects anonymous usage statistics. No personally identifiable information is collected.</li>
-            <li><strong>Chess.com Public API:</strong> Used to fetch publicly available player profiles and game data.</li>
-        </ul>
+      <h2>Data Categories We Collect</h2>
+      <ul>
+        <li>
+          <strong>Purchases:</strong> Product identifiers and transaction dates
+          used to determine whether premium access is active.
+        </li>
+        <li>
+          <strong>Identifiers:</strong> Advertising identifier (IDFA) if you
+          grant tracking permission, and device identifiers used by our service
+          providers.
+        </li>
+        <li>
+          <strong>Usage Data:</strong> Screen views, app events, and feature
+          usage.
+        </li>
+        <li><strong>Diagnostics:</strong> Crash logs and performance data.</li>
+        <li>
+          <strong>Device Information:</strong> Device model, iOS version, and
+          app version.
+        </li>
+      </ul>
 
-        <h2>Data Storage</h2>
-        <ul>
-            <li>All data (saved profiles, cached analyses, engine settings) is stored locally on your device.</li>
-            <li>No data is uploaded to external servers.</li>
-        </ul>
+      <h2>Payments</h2>
+      <p>
+        We offer an optional one-time premium purchase processed by Apple. We
+        never receive your payment method. Apple handles transactions through
+        StoreKit. We record only the information needed to determine whether
+        your purchase entitlement is active, such as the product identifier and
+        transaction date. Apple's privacy policy applies to the payment itself.
+      </p>
 
-        <div class="contact-box">
-            <h2>Contact</h2>
-            <p>If you have questions about this privacy policy, please contact us at:<br>
-            <a href="mailto:help@chessight.app">mail@logncomplexity.com</a></p>
-        </div>
+      <h2>Advertising</h2>
+      <p>
+        We display rewarded video ads through Google AdMob for users who have
+        not purchased premium. Google may collect data as an independent
+        controller for ad delivery and measurement, including the advertising
+        identifier (IDFA) if you grant permission through App Tracking
+        Transparency, IP address, coarse location, device type and operating
+        system, and ad interaction data such as when an ad is shown, clicked, or
+        completed.
+      </p>
+      <p>
+        If you decline tracking permission, ads may still appear but they will
+        be non-personalized. Learn more at
+        <a
+          href="https://policies.google.com/technologies/ads"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Google's advertising privacy policy</a
+        >.
+      </p>
+
+      <h2>Tracking Permission</h2>
+      <p>
+        When you first launch the app, iOS may ask whether to allow tracking. We
+        use this permission only to enable personalized ads. You can change this
+        choice at any time in iOS Settings &gt; Privacy &amp; Security &gt;
+        Tracking. Denying tracking does not disable any app functionality.
+      </p>
+
+      <h2>Third-Party Services</h2>
+      <ul>
+        <li>
+          <strong>Google AdMob:</strong> Provides rewarded advertising and ad
+          measurement. See
+          <a
+            href="https://policies.google.com/technologies/ads"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Google's advertising privacy policy</a
+          >.
+        </li>
+        <li>
+          <strong>Apple StoreKit:</strong> Processes premium purchases and
+          supports purchase verification. See
+          <a
+            href="https://www.apple.com/legal/privacy/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Apple's privacy policy</a
+          >.
+        </li>
+        <li>
+          <strong>Firebase Crashlytics:</strong> Collects crash reports and
+          performance data to help us improve app stability. See
+          <a
+            href="https://firebase.google.com/support/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Firebase privacy information</a
+          >.
+        </li>
+        <li>
+          <strong>Firebase Analytics:</strong> Collects usage statistics such as
+          screen views, app events, and feature usage. See
+          <a
+            href="https://firebase.google.com/support/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Firebase privacy information</a
+          >.
+        </li>
+        <li>
+          <strong>Chess.com Public API:</strong> Used to fetch publicly
+          available player profiles and game data. See
+          <a
+            href="https://www.chess.com/legal/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Chess.com privacy policy</a
+          >.
+        </li>
+      </ul>
+
+      <h2>Data Storage</h2>
+      <ul>
+        <li>
+          All data (saved profiles, cached analyses, engine settings) is stored
+          locally on your device.
+        </li>
+        <li>
+          Analytics, diagnostics, advertising, and purchase entitlement data may
+          be processed by the third-party services listed above.
+        </li>
+      </ul>
+
+      <h2>Your Choices</h2>
+      <ul>
+        <li>
+          You can choose whether to allow tracking in iOS Settings &gt; Privacy
+          &amp; Security &gt; Tracking.
+        </li>
+        <li>
+          You can manage Apple's ad preferences in iOS Settings &gt; Privacy
+          &amp; Security &gt; Apple Advertising and turn Personalized Ads on or
+          off.
+        </li>
+        <li>You can avoid rewarded ads by purchasing premium.</li>
+      </ul>
+
+      <h2>Children</h2>
+      <p>
+        Chessight is not directed to children under 13. We do not knowingly
+        collect personal data from children under 13. If you believe a child
+        under 13 has provided personal data through the app, please contact us
+        so we can review and address the issue.
+      </p>
+
+      <h2>Changes In This Update</h2>
+      <ul>
+        <li>
+          Added information about optional premium purchases processed by Apple
+          through StoreKit.
+        </li>
+        <li>
+          Added information about rewarded ads served through Google AdMob,
+          including personalized and non-personalized ads.
+        </li>
+        <li>
+          Added details about App Tracking Transparency permission and how to
+          change that setting in iOS.
+        </li>
+        <li>
+          Updated the list of third-party services and the categories of data
+          processed by the app and its service providers.
+        </li>
+      </ul>
+
+      <div class="contact-box">
+        <h2>Contact</h2>
+        <p>
+          If you have questions about this privacy policy, please contact us
+          at:<br />
+          <a href="mailto:help@chessight.app">help@chessight.app</a>
+        </p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
